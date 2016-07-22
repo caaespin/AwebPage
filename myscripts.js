@@ -9,6 +9,14 @@ $(document).ready(function(){
     	$("#restOf").fadeIn(1000);
     	$("#mDiv").css("border-radius", "50%");
 	});
+
+	$("#mFace").hover(function(){
+  		$(".mInitial").stop(true).fadeTo("fast", 0);
+  		$(".mResShow").stop(true).fadeTo("fast", 1);
+  	}, function(){
+  		$(".mInitial").stop(true).fadeTo("fast", 1);
+  		$(".mResShow").stop(true).fadeTo("fast", 0).hide();
+  	});
 });
 
 // $(window).load(function(){
